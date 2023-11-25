@@ -1,0 +1,29 @@
+
+vgg16-5stage: C:\Users\dream\.cache\torch\hub\checkpoints\vgg16-397923af.pth
+pretrain: true
+
+dataset:
+  BSDS: E:\matlab_tool\Dataset\ori_data\HED-BSDS
+  BSDS-VOC: E:\matlab_tool\Dataset\new_data\BSDS500
+  NYUD-V2: E:\matlab_tool\Dataset\new_data\NYUD
+  # PASCAL-Context: D:\DataSet\PASCAL_Context
+  # PASCAL-VOC12: D:\DataSet\VOCdevkit
+  # NYUD-V2: D:\DataSet\NYUD
+#  PASCAL-Context: D:\DataSet\PASCAL
+
+
+# train 16 32 8 for nyud and PASCAL-Context 10 8 2 for bsds PASCAL12: 10 64 16
+batch_size: 1
+max_iter: 10
+decay_rate: 0.1
+decay_steps: 2
+
+# optimization Adam or SGD
+method: AdamW
+lr: 1.0e-3
+momentum: 0.99
+weight_decay: 2.0e-4
+
+# save
+sava_epoch: 2
+save_name: _model_AdamW_01725_ep10.pth
