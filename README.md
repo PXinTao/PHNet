@@ -1,8 +1,6 @@
 # PHNet
 Learning Parallel and Hierarchical Mechanisms for Edge Detection
 ****
-# The code is being sorted out, please wait
-****
 All results is evaluated on Python 3.8 with PyTorch 1.11.0+cuda113 and MATLAB R2018b.
 We only publish our test results on the BSDS500 and Multicue datasets for now.The implementation details of code will be updated after the paper is officially published.
 ****
